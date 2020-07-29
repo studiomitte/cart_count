@@ -1,6 +1,9 @@
 # TYPO3 Extension `cart_count`
 
 This extensions provides a basic endpoint to fetch information from current cart session when using the TYPO3 extension [cart](https://github.com/extcode/cart).
+The main benefit is to have pages still cacheable and show e.g. the count of articles in the cart.studiomitte
+
+![Example](./Resources/Public/Images/Example.png)
 
 ```json
 {
