@@ -1,7 +1,7 @@
 {
 	"name": "studiomitte/cart-count",
 	"type": "typo3-cms-extension",
-	"description": "Count of cart items",
+	"description": "Endpoint for EXT:cart cart information which can be retrieved by an AJAX request",
 	"keywords": [
 		"TYPO3",
 		"extension",
@@ -24,7 +24,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"StudioMitte\\CartCount": "Classes"
+			"StudioMitte\\CartCount\\": "Classes"
 		}
 	},
 	"replace": {
