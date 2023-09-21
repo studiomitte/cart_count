@@ -25,7 +25,7 @@ class CartCounter implements MiddlewareInterface
         $checkoutId = $this->getCheckoutId($request);
         if ($checkoutId) {
             $sessionHandler = GeneralUtility::makeInstance(SessionHandler::class);
-            $cart = $sessionHandler->restore($checkoutId);
+            $cart = $sessionHandler->restoreCart($checkoutId);
             $info = [];
             if ($cart instanceof Cart) {
                 $info = $this->getCartInformation($cart);
@@ -63,9 +63,9 @@ class CartCounter implements MiddlewareInterface
         return $data;
     }
 
-    protected function getCheckoutId(ServerRequestInterface $request): int
+    protected function getCheckoutId(ServerRequestInterface $request): string
     {
-        return (int)($request->getQueryParams()['cartId'] ?? 0);
+        return $request->getQueryParams()['cartId'] ?? '';
     }
 
 }
