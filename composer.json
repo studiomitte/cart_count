@@ -19,8 +19,8 @@
 		"GPL-2.0-or-later"
 	],
 	"require": {
-		"typo3/cms-core": "^11.5",
-		"extcode/cart": "^8.4"
+		"typo3/cms-core": "^12.4",
+		"extcode/cart": "^9 || dev-9.x-dev"
 	},
 	"autoload": {
 		"psr-4": {
