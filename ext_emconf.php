@@ -9,4 +9,13 @@ $EM_CONF[$_EXTKEY] = [
     'state' => 'beta',
     'clearCacheOnLoad' => true,
     'version' => '1.0.0',
+    'constraints' =>
+        [
+            'depends' => [
+                'typo3' => '12.4.0-12.4.99',
+                'cart' => '9.0.0-9.99.99'
+            ],
+            'conflicts' => [],
+            'suggests' => [],
+        ]
 ];
