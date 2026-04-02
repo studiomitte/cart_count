@@ -20,7 +20,7 @@
 	],
 	"require": {
 		"typo3/cms-core": "^12.4 || ^13.4",
-		"extcode/cart": "^9 || ^ 10 || ^11.5"
+		"extcode/cart": "^9 || ^10 || ^11.5"
 	},
 	"autoload": {
 		"psr-4": {
