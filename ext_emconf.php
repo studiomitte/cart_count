@@ -8,12 +8,12 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'gr@studiomitte.com',
     'state' => 'beta',
     'clearCacheOnLoad' => true,
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'constraints' =>
         [
             'depends' => [
-                'typo3' => '12.4.0-12.4.99',
-                'cart' => '9.0.0-9.99.99'
+                'typo3' => '13.4.0-13.4.99',
+                'cart' => '11.5.0-11.99.99'
             ],
             'conflicts' => [],
             'suggests' => [],
